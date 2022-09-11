@@ -7,5 +7,5 @@ module.exports = {
       'mobile': {'max': '510px'}
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
