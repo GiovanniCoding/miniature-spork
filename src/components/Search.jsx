@@ -17,7 +17,7 @@ export const Search = () => {
   }
 
   return (
-    <div className='w-96 mr-8 my-auto mobile:mx-4'>
+    <div className='w-96 mr-16 my-auto mobile:mx-4'>
       <ReactSearchAutocomplete
         items={ gamesOptions }
         onSearch={ handleOnSearch }
