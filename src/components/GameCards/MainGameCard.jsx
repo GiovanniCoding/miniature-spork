@@ -36,7 +36,7 @@ export const MainGameCard = () => {
               <h1 className="text-2xl text-white">Mario Kart 8 Deluxe</h1>
               <h2 className="text-sm text-gray-100">28th Apr 2017</h2>
             </div>
-            <p className="bg-[#138089] p-2 text-gray-50">Mario Kart 8 Deluxe (JP) (also called MK8D or MK8DX) is an expanded version of the 2014 Wii U racing game, Mario Kart 8, for the Nintendo Switch that was released on April 28, 2017. It includes all the original content and its DLC alongside new features, including a revised Battle Mode much similar to past games, minor gameplay changes, some new items, and several new characters like the Inkling.</p>
+            <p className="bg-[#138089] p-2 text-gray-50 rounded-md">Mario Kart 8 Deluxe (JP) (also called MK8D or MK8DX) is an expanded version of the 2014 Wii U racing game, Mario Kart 8, for the Nintendo Switch that was released on April 28, 2017. It includes all the original content and its DLC alongside new features, including a revised Battle Mode much similar to past games, minor gameplay changes, some new items, and several new characters like the Inkling.</p>
           </div>
         </div>
       </div>
