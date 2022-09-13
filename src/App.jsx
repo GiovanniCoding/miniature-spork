@@ -1,5 +1,3 @@
-
-import { MainGameCard } from './components/GameCards/MainGameCard'
 import { Navbar } from './components/Navbar'
 import { Recomendations } from './pages/Recomendations'
 

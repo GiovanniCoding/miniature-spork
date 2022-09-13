@@ -1,11 +1,11 @@
 import { MainGameCard } from "../components/GameCards/MainGameCard"
-import { RecomendationCard } from "../components/GameCards/RecomendationCard"
+import { RecomendationsGrid } from "../components/RecomendationsGrid"
 
 export const Recomendations = () => {
   return (
     <>
       <MainGameCard />
-      <RecomendationCard />
+      <RecomendationsGrid />
     </>
   )
 }

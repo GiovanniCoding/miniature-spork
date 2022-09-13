@@ -1,6 +1,6 @@
-export const RecomendationCard = () => {
+export const RecomendationCard = ( ) => {
   return (
-    <div className="max-w-[16rem] h-[24rem] bg-[#1182a4] rounded-md">
+    <div className="min-w-[16rem] h-[24rem] bg-[#1182a4] rounded-md basis-[16rem] flex-grow">
       <figure className="h-[10rem] px-4 pb-2 pt-4">
         <img
           src={'https://imgs.search.brave.com/WStuyaqp1ABullS8QtLmfNZVe2qQkHjmB1HOuQ3z5Pc/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly93d3cu/bWFzZ2FtZXJzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MC8wOS9tYXJpby1j/b2NoZXMtLmpwZw'}
