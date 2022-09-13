@@ -654,6 +654,18 @@ video {
   height: 400px;
 }
 
+.h-\[24rem\] {
+  height: 24rem;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-\[14rem\] {
+  height: 14rem;
+}
+
 .max-h-\[8rem\] {
   max-height: 8rem;
 }
@@ -672,6 +684,50 @@ video {
 
 .max-h-\[380px\] {
   max-height: 380px;
+}
+
+.max-h-\[20rem\] {
+  max-height: 20rem;
+}
+
+.max-h-\[16rem\] {
+  max-height: 16rem;
+}
+
+.max-h-\[10rem\] {
+  max-height: 10rem;
+}
+
+.max-h-\[1rem\] {
+  max-height: 1rem;
+}
+
+.max-h-\[24rem\] {
+  max-height: 24rem;
+}
+
+.max-h-8 {
+  max-height: 2rem;
+}
+
+.max-h-\[2rem\] {
+  max-height: 2rem;
+}
+
+.max-h-\[4rem\] {
+  max-height: 4rem;
+}
+
+.max-h-\[11rem\] {
+  max-height: 11rem;
+}
+
+.max-h-\[9rem\] {
+  max-height: 9rem;
+}
+
+.min-h-\[24rem\] {
+  min-height: 24rem;
 }
 
 .w-96 {
@@ -742,6 +798,22 @@ video {
   max-width: 250px;
 }
 
+.max-w-\[1rem\] {
+  max-width: 1rem;
+}
+
+.max-w-\[10rem\] {
+  max-width: 10rem;
+}
+
+.max-w-\[15rem\] {
+  max-width: 15rem;
+}
+
+.max-w-\[16rem\] {
+  max-width: 16rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -762,12 +834,24 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-bl-3xl {
   border-bottom-left-radius: 1.5rem;
 }
 
 .rounded-tr-3xl {
   border-top-right-radius: 1.5rem;
+}
+
+.rounded-br-3xl {
+  border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-tl-3xl {
+  border-top-left-radius: 1.5rem;
 }
 
 .border {
@@ -789,6 +873,21 @@ video {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
+.bg-teal-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#005873\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 88 115 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1182a4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 130 164 / var(--tw-bg-opacity));
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -808,6 +907,37 @@ video {
   padding: 0.5rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -825,6 +955,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold {
