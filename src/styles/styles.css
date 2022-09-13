@@ -576,6 +576,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -620,8 +630,48 @@ video {
   height: 100%;
 }
 
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[270px\] {
+  height: 270px;
+}
+
+.h-\[2700px\] {
+  height: 2700px;
+}
+
+.h-\[220px\] {
+  height: 220px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .max-h-\[8rem\] {
   max-height: 8rem;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
+.max-h-\[3800px\] {
+  max-height: 3800px;
+}
+
+.max-h-\[380px\] {
+  max-height: 380px;
 }
 
 .w-96 {
@@ -632,12 +682,68 @@ video {
   width: 100%;
 }
 
+.w-\[80px\] {
+  width: 80px;
+}
+
+.w-\[1600px\] {
+  width: 1600px;
+}
+
+.w-\[160px\] {
+  width: 160px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[220px\] {
+  width: 220px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[180px\] {
+  width: 180px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
 .min-w-\[150px\] {
   min-width: 150px;
 }
 
 .max-w-\[70rem\] {
   max-width: 70rem;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.max-w-\[80px\] {
+  max-width: 80px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .justify-between {
@@ -678,9 +784,24 @@ video {
   background-color: rgb(19 128 137 / var(--tw-bg-opacity));
 }
 
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-2 {
@@ -704,6 +825,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .italic {
