@@ -4,7 +4,7 @@ import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 
 export const Search = () => {
 
-  const client = new MeiliSearch({ host: 'http://34.71.114.220:7700', apiKey: 'red-project' })
+  const client = new MeiliSearch({ host: 'http://35.193.60.83:7700', apiKey: 'red-project' })
   const [gamesOptions, setGamesOptions] = useState([])
 
   const handleOnSearch = (string, results) => {
