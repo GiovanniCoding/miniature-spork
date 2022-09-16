@@ -11,6 +11,21 @@ Switch Games Recommendation is a web application that allow you to receive recom
 
 ## Frontend
 
-A user interface was designed using the React framework, it was sought to leave a simple interface for the use of the application, with a search engine, a section for the selection of the game and a second section for the recommendations based on the selected game.
+A user interface was designed, it was sought to leave a simple interface for the use of the application, with a search engine, a section for the selection of the game and a second section for the recommendations based on the selected game.
 
-![User Interface](./md_images/user-interface.png)
+### Build With
+- React.js
+- Tailwind CSS
+
+<img src="./md_images/user-interface.png" />
+
+## Backend
+
+A backend was required for the application to work, it was developed into a set of tools, this can be found in the personal backend repository.
+
+### Build With
+- Docker & Docker Compose
+- Python
+- Meilisearch
+- MariaDB
+- Minio
