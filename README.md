@@ -1,12 +1,5 @@
 # Switch Games Recommendation
 
-Assign: Anonymous
-Date Created: September 15, 2022 9:23 AM
-Priority: Low
-Status: In Progress
-
-# Switch Games Recommendation
-
 Switch Games Recommendation is a web application that allow you to receive recommendations for nintendo switch games that you might like based on games of your choice.
 
 ## Frontend

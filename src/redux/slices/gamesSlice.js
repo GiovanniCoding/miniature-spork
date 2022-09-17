@@ -3,23 +3,22 @@ import { createSlice } from '@reduxjs/toolkit'
 export const gamesSlice = createSlice({
   name: 'games',
   initialState: {
-    query: '',
-    searchFocus: false,
-    gamesOptions: []
+    favoriteGame: {
+      id: '000000',
+      title: ''
+    },
+    recommendedGames: [],
   },
   reducers: {
-    setQuery: (state, action) => {
-      state.query = action.payload
+    setFavoriteGame: (state, action) => {
+      state.favoriteGame = action.payload
     },
-    setGamesOptions: (state, action) => {
-      state.gamesOptions = action.payload
+    setEecommendedGames: (state, action) => {
+      state.recommendedGames = action.payload
     },
-    setSearchFocus: (state, action) => {
-      state.searchFocus = action.payload
-    }
   }
 })
 
-export const { setQuery, setGamesOptions, setSearchFocus } = gamesSlice.actions
+export const { setFavoriteGame, setEecommendedGames } = gamesSlice.actions
 
 export default gamesSlice.reducer
