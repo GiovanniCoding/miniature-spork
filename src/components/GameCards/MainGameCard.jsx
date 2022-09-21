@@ -16,6 +16,8 @@ export const MainGameCard = () => {
           release_date: data[0][2],
           image_url: data[0][3],
           description: data[0][4]
+
+          // Llamar a las recomendaciones
         } ) }
       )
     }

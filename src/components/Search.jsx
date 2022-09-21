@@ -1,4 +1,3 @@
-import MeiliSearch from 'meilisearch'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { ReactSearchAutocomplete } from 'react-search-autocomplete'
