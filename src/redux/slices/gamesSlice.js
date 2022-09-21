@@ -4,7 +4,7 @@ export const gamesSlice = createSlice({
   name: 'games',
   initialState: {
     favoriteGame: {
-      id: '000000',
+      id: '',
       title: ''
     },
     recommendedGames: [],

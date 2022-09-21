@@ -6,15 +6,15 @@ import { setFavoriteGame } from '../redux/slices/gamesSlice'
 
 export const Search = () => {
 
-  const client = new MeiliSearch({ host: 'api.egiovanni.com:7700', apiKey: 'red-project' })
   const [gamesOptions, setGamesOptions] = useState([])
   const dispatch = useDispatch()
 
   const handleOnSearch = (string, results) => {
-    client.index( 'switch_games' ).search( string )
-      .then( (res) => {
-        setGamesOptions(res.hits)
-      } )
+    fetch(
+      `http://api.egiovanni.com/meilisearch?collection=switch_games&query=${string}`
+    )
+      .then( response => response.json() )
+      .then( data => setGamesOptions( data.hits ) )
   }
 
   const handleOnSelect = (item) => {
