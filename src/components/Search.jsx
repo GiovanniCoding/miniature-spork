@@ -10,7 +10,7 @@ export const Search = () => {
 
   const handleOnSearch = (string, results) => {
     fetch(
-      `http://api.egiovanni.com/meilisearch?collection=switch_games&query=${string}`
+      `https://api.egiovanni.com/meilisearch?collection=switch_games&query=${string}`
     )
       .then( response => response.json() )
       .then( data => setGamesOptions( data.hits ) )

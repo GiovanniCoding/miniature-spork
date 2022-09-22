@@ -7,7 +7,7 @@ export const RecomendationCard = ( { card } ) => {
   useEffect(() => {
     
     fetch(
-      `http://api.egiovanni.com/db/?games=${ card }`
+      `https://api.egiovanni.com/db/?games=${ card }`
     )
       .then( response => response.json() )
       .then( data => setGameInfo({ title: data[0][1], release_date: data[0][2], image: data[0][3], description: data[0][4] }) )

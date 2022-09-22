@@ -9,7 +9,7 @@ export const MainGameCard = () => {
   useEffect(() => {
     if ( id != '' ) {
       fetch(
-        `http://api.egiovanni.com/db/?games=${ id }`
+        `https://api.egiovanni.com/db/?games=${ id }`
       )
         .then( response => response.json() )
         .then( data => { setGameInfo( {

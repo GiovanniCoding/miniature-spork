@@ -8,7 +8,7 @@ export const RecomendationsGrid = () => {
 
   useEffect(() => {
     fetch(
-      `http://api.egiovanni.com/model/?id=${id}`
+      `https://api.egiovanni.com/model/?id=${id}`
     )
       .then( response => response.json() )
       .then( data => setRecommendedGames( data ) )
