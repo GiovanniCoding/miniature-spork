@@ -1,19 +1,24 @@
+import algoliasearch from 'algoliasearch'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import { setFavoriteGame } from '../redux/slices/gamesSlice'
 
 export const Search = () => {
-
   const [gamesOptions, setGamesOptions] = useState([])
   const dispatch = useDispatch()
 
+  const client = algoliasearch('OC6BAJ631K', '61dd445490707d6dd3452f38fc137fb0')
+  const index = client.initIndex('switch_games')
+
   const handleOnSearch = (string, results) => {
-    fetch(
-      `https://api.egiovanni.com/meilisearch?collection=switch_games&query=${string}`
-    )
-      .then( response => response.json() )
-      .then( data => setGamesOptions( data.hits ) )
+    if ( string != '') {
+      index.search(string, {
+        attributesToRetrieve: ['id', 'title']
+      }).then(
+        ({ hits }) => { setGamesOptions( hits ) }
+      )
+    }
   }
 
   const handleOnSelect = (item) => {
@@ -28,6 +33,7 @@ export const Search = () => {
         resultStringKeyName='title'
         onSearch={ handleOnSearch }
         onSelect={ handleOnSelect }
+        inputDebounce={ 250 }
       />
     </div>
   )
