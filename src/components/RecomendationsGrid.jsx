@@ -5,14 +5,21 @@ import { RecomendationCard } from "./GameCards/RecomendationCard"
 export const RecomendationsGrid = () => {
   const { id } = useSelector( state => state.games.favoriteGame )
   const [recommendedGames, setRecommendedGames] = useState([])
+  const client = algoliasearch('OC6BAJ631K', '61dd445490707d6dd3452f38fc137fb0')
+  const index = client.initIndex('switch_games')
 
   useEffect(() => {
     if ( id != '') {
-      fetch(
-        `https://api.egiovanni.com/model/?id=${id}`
+      index.search( id , {
+        attributesToRetrieve: ['id', 'title']
+      }).then(
+        ({ hits }) => { setGamesOptions( hits ) }
       )
-        .then( response => response.json() )
-        .then( data => setRecommendedGames( data ) )
+      // fetch(
+      //   `https://api.egiovanni.com/model/?id=${id}`
+      // )
+      //   .then( response => response.json() )
+      //   .then( data => setRecommendedGames( data ) )
     }
     
   }, [ id ])
