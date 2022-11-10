@@ -21,4 +21,3 @@ A backend was required for the application to work, it was developed into a set 
 - Python
 - Meilisearch
 - MariaDB
-- Minio
